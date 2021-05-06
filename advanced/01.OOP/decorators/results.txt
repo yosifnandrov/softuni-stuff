@@ -1,0 +1,7 @@
+Function mul was called. Result: 24
+Function mul was called. Result: 24
+Function mul was called. Result: 24
+Function mul was called. Result: 24
+Function mul was called. Result: 24
+Function mul was called. Result: 24
+Function mul was called. Result: 24

@@ -1,0 +1,23 @@
+def make_bold(fn):
+    def wrapper(*args,**kwargs):
+        return f"<b>{fn(*args)}</b>"
+    return wrapper
+
+
+def make_italic(fn):
+    def wrapper(*args,**kwargs):
+        return f"<i>{fn(*args)}</i>"
+    return wrapper
+
+def make_underline(fn):
+    def wrapper(*args,**kwargs):
+        return f"<u>{fn(*args)}</u>"
+    return wrapper
+
+@make_bold
+@make_italic
+@make_underline
+def greet(name):
+    return f"Hello, {name}"
+
+print(greet("Peter"))
